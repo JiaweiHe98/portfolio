@@ -8,12 +8,15 @@ interface LearnMoreProps {
   href: string;
 }
 
-const preventDefault = (event: React.SyntheticEvent) => event.preventDefault();
-
 const LearnMore = ({ href }: LearnMoreProps) => {
+  const handler = (event: React.SyntheticEvent) => {
+    event.preventDefault();
+    window.open(href);
+  };
+
   return (
     <Link
-      onClick={preventDefault}
+      onClick={handler}
       href={href}
       underline="none"
       className="group flex items-center"
