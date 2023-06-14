@@ -1,32 +1,48 @@
-import { Box, Button, Typography, Avatar } from '@mui/material';
+import { Box, Button, Typography, Avatar, useMediaQuery } from '@mui/material';
 import React from 'react';
 import content from '../../data/Content';
 import Params from '../../data/Params';
 import Typewriter from 'typewriter-effect';
 import avatar from '../../assets/jiaweihe.jpeg';
-import bg from '../../assets/bg.png';
 import { Link } from 'gatsby';
 
 const About = () => {
+  const matches = useMediaQuery('(min-width:600px)');
+
   return (
     <>
       <Box className="lg:grid grid-cols-2 gap-x-10">
         <Box className="flex flex-col justify-center text-center lg:text-left lg:pl-10">
           <Box>
-            <Typography variant="h1" sx={{ fontWeight: 500 }}>
-              {content.name}
-            </Typography>
+            {matches ? (
+              <Typography variant="h1" sx={{ fontWeight: 500 }}>
+                {content.name}
+              </Typography>
+            ) : (
+              <Typography variant="h2" sx={{ fontWeight: 500 }}>
+                {content.name}
+              </Typography>
+            )}
           </Box>
           <Box>
-            <Typography
-              variant="h3"
-              sx={{ fontWeight: 400, color: Params.seondaryBgColor }}
-            >
-              software developer
-            </Typography>
+            {matches ? (
+              <Typography
+                variant="h3"
+                sx={{ fontWeight: 400, color: Params.seondaryBgColor }}
+              >
+                software developer
+              </Typography>
+            ) : (
+              <Typography
+                variant="h4"
+                sx={{ fontWeight: 400, color: Params.seondaryBgColor }}
+              >
+                software developer
+              </Typography>
+            )}
           </Box>
           <Box
-            className="text-xl mt-1 mb-4 max-w-2xl mx-auto lg:mx-0"
+            className="text-md md:text-xl mt-1 mb-4 max-w-2xl mx-auto lg:mx-0"
             sx={{ color: Params.bioColor }}
           >
             <Typewriter

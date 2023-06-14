@@ -1,9 +1,9 @@
-import { Box, Container } from '@mui/material';
+import { Box, Container, useMediaQuery } from '@mui/material';
 import React from 'react';
 import Link from '@mui/material/Link';
 import Params from '../data/Params';
 
-const elementStyle = 'uppercase lg:flex group relative first:ml-auto ml-1 px-2';
+const elementStyle = 'uppercase lg:flex group relative px-0.5 sm:px-2';
 
 const elementTextStyle = 'group-hover:text-white/50';
 
@@ -62,13 +62,10 @@ const Header = () => {
       <Container
         maxWidth={Params.containerMaxWidth}
         sx={{
-          display: 'flex',
-          justifyContent: 'end',
-          alignItems: 'center',
-          height: 64,
+          height: 50,
         }}
       >
-        <Box sx={{ display: 'flex' }}>
+        <Box className="h-full text-sm sm:text-base flex justify-around sm:justify-end items-center">
           {LeftElementData.map((item, idx) => (
             <LeftElement key={idx} content={item.name} href={item.href} />
           ))}
