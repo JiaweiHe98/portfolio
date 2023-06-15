@@ -211,7 +211,7 @@ const Content = {
     {
       name: 'Talker',
       intro:
-        'A web application that allows users to chat, tweet, having group chat with each other. Created with React, Materil UI, Express.js, and MongoDB.',
+        'Developed a feature-rich web application enabling users to engage in real-time chat, tweet, and participate in group conversations. Created with React, Materil UI, Express.js, and MongoDB.',
       img: ['talker/img1.png'],
       alt: ['Talker web app'],
       github: 'https://github.com/JiaweiHe98/talker',
