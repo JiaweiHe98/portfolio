@@ -191,7 +191,7 @@ const Content = {
       link: null,
     },
     {
-      name: 'CamousSale',
+      name: 'CampusSale',
       intro:
         'A web application that allows students to buy and sell items on campus. Created with React, Spring Boot, Spring Security, and MySQL.',
       img: ['campusSale/img1.png'],
