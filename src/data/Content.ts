@@ -182,7 +182,7 @@ const Content = {
       link: null,
     },
     {
-      name: 'Restaruant Recommender',
+      name: 'Restaurant Recommender',
       intro:
         'A web application that recommends restaurants to users based on their preferences. Created with React, Express.js, gRPC, and Collaborative Filtering.',
       img: ['restaurantRecommender/img1.jpeg'],
