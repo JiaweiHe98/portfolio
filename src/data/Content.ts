@@ -45,7 +45,7 @@ const Content = {
     'I love to learn and share knowledge.',
     'I am a team player. Helping others is my passion.',
   ],
-  address: '3607 Spring Garden St, Unit 5, Philadelphia, PA',
+  address: '1786 Alaqua Way, Melbourne, FL 32904',
   email: 'jiaweihe98@gmail.com',
   linkedin: 'https://www.linkedin.com/in/jiaweihe98',
   github: 'https://github.com/JiaweiHe98',
